@@ -1,0 +1,18 @@
+
+ul{
+	list-style: none;
+	display: inline;
+	border-bottom: 1px solid grey;
+}
+a{
+	list-style: none;
+}
+h1{
+	text-align: center;
+	text-shadow: 6px 6px 6px #009933;
+}
+body{
+	background:url("Dark_Forest.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+}
