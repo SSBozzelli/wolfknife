@@ -24,15 +24,19 @@ div{
 	
 }
 p{
-	background:url("Grey_Background.jpg");
+	background:url("dark_background.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
+	text-align: center;
+	display:block;
 	color: white;
 }
 p1{
-	background:url("Grey_Background.jpg");
+	background:url("dark_background.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
+	text-align: center;
+	display:block;
 	color: white;
 }
 nav{
