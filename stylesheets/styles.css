@@ -9,7 +9,7 @@ a{
 }
 h1{
 	text-align: center;
-	text-shadow: 6px 6px 6px #009933;
+	text-shadow: 6px 6px 6px #5C005C;
 	color: white;
 }
 body{
@@ -24,9 +24,15 @@ div{
 	
 }
 p{
+	background:url("Grey_Background.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
 	color: white;
 }
 p1{
+	background:url("Grey_Background.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
 	color: white;
 }
 nav{
@@ -51,7 +57,7 @@ nav ul li a {
   display: block;
   width: 100%;
   color:white;
-  background: #308014;
+  background: #5C005C;
 }
 nav ul li a:hover {
   background: #4c4c4c;
