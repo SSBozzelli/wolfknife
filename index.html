@@ -11,8 +11,47 @@
     
   </head>
   <body>
- 
-    <form action="http://www.google.com" method="get">
+ 	<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Wolfknife</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Registration</a></li>
+        <li><a href="#">Login In</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Click to drop down <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Click Me</a></li>
+            <li><a href="#">Click Me again</a></li>
+            <li><a href="#"></a></li>
+            <li class="divider"></li>
+            <li><a href="#">Click me once more</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Click me one last time</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <form action="http://www.google.com" method="post">
     	<label id="regheader">Register for your new account.</label>
     	<label>First Name:<input name="First Name:" type="text"></label>
     	<label>Last Name:<input name="Last Name:" type="text"></label>
@@ -22,11 +61,10 @@
     	<label>Email:<input name="Email:" type="text"></label>
     	<label>Security Question:<input name="question:" type="text"></label>
     	<label>Security Answer:<input name="answer" type="text"></label>
-    	<button type="submit">Submit</button>
+    	<button class = "submitButton" type="submit">Submit</button>
     </form>
-    
-  	<script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/jquery-2.1.0.js"></script>
+  	<script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/my.js"></script>
   </body>
 </html>

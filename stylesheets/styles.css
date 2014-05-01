@@ -2,7 +2,7 @@ label{
 	display: block;
 }
 
-button {
+ .submitButton {
     height: 50px;
     width: 80px;
     border-radius: 5px;
@@ -11,7 +11,4 @@ button {
     color: white;
     font-family: Verdana, Arial, Sans-Serif;
     opacity: 0.6;
-}
-body{
-	background: grey;
 }
