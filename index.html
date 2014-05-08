@@ -29,18 +29,6 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Registration</a></li>
         <li><a href="#">Login In</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Click to drop down <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Click Me</a></li>
-            <li><a href="#">Click Me again</a></li>
-            <li><a href="#"></a></li>
-            <li class="divider"></li>
-            <li><a href="#">Click me once more</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Click me one last time</a></li>
-          </ul>
-        </li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -51,18 +39,21 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+	<div class = wolfdiv>
     <form action="http://www.google.com" method="post">
-    	<label id="regheader">Register for your new account.</label>
-    	<label>First Name:<input name="First Name:" type="text"></label>
-    	<label>Last Name:<input name="Last Name:" type="text"></label>
-    	<label>Username:<input name="Username:" type="text"></label>
-    	<label>Password:<input name="Password:" type="password"></label>
-    	<label>Retype Password:<input name="password:" type="password"></label>
-    	<label>Email:<input name="Email:" type="text"></label>
-    	<label>Security Question:<input name="question:" type="text"></label>
-    	<label>Security Answer:<input name="answer" type="text"></label>
+    	<h3 class="regheader">Register for your new account.</h3>
+    	<label class = "Fname" >First Name:<input name="fname:" type="text"></label>
+    	<label class = "Lname">Last Name:<input name="lname:" type="text"></label>
+    	<label class = "username">Username:<input name="psername:" type="text"></label>
+    	<label class = "pass1">Password:<input name="password:" id = "password" type="password"></label>
+    	<label class = "pass2">Retype Password:<input name="password2:" id = "password2" type="password"
+    		onkeyup="validatePass(); return false;"><span id="confirmMessage" class="confirmMessage"></span></label>
+    	<label class = "email">Email:<input name="email:" type="text"></label>
+    	<label class = "secquestion">Security Question:<input name="question:" type="text"></label>
+    	<label class = "secanswer">Security Answer:<input name="answer" type="text"></label>
     	<button class = "submitButton" type="submit">Submit</button>
     </form>
+    </div>
     <script src="javascripts/jquery-2.1.0.js"></script>
   	<script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/my.js"></script>
