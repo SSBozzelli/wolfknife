@@ -9,24 +9,38 @@ function validatePass()
 	   
 	    if(pass1.value == pass2.value)
 	    {
-	       
 	        pass2.style.backgroundColor = goodColor;
 	        message.style.color = goodColor;
 	        message.innerHTML = "&#x2713 Passwords Match!";
-	    }else{
-	        
+	    }
+	    else
+	    {
 	        pass2.style.backgroundColor = badColor;
 	        message.style.color = badColor;
 	        message.innerHTML = "&#x1f6ab Passwords Do Not Match!";
 	    }
 	}  
 
+
+$(document).ready(function(){
+    $(".logbutton").mouseenter(function(){
+    	$(this).animate({
+    		width:  "+=10px",
+    		height: "+=10px"});
+ 
+    });
+    $(".logbutton").mouseleave(function(){
+    	$(this).animate({
+    		width:  "-=10px",
+    		height: "-=10px"}); 
+    });
+});
+
 $(document).ready(function(){
     $(".submitButton").mouseenter(function(){
-        $(".submitButton").fadeTo("slow",1);
+        $(this).fadeTo("slow",1);
     });
     $(".submitButton").mouseleave(function(){
-        $(".submitButton").fadeTo("slow",0.5);
+        $(this).fadeTo("slow",0.5);
     });
-    
 });
