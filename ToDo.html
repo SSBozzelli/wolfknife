@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" href="stylesheets/ToDo.css">
+</head>
+<body>
+	<div class="table">
+      <div class="table-cell">
+        <div class="questionaire">
+          <label>Enter to-do list title</label>
+          <input type="text" />
+        </div>
+
+        <div class="todo hidden">
+          <h1 class="todo-title"></h1>
+
+          <label>Enter new to-do</label>
+          <input class="todo-input" type="text" />
+
+          <ol class="todo-list"></ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascripts/jquery-2.1.0.js"></script>
+  	<script src="javascripts/bootstrap.js"></script>
+    <script src="javascripts/ToDo.js"></script>
+     <script>
+      window.onload = function() {
+        var script = document.createElement('script');
+        script.src = 'app.js';
+        document.documentElement.firstChild.appendChild(script);
+      }
+    </script>
+
+</body>
+</html>
